@@ -156,17 +156,17 @@ const Register = () => {
                   ></input>
                   {showWarning && !email && (
                     <div className="warning-msg">
-                      Preencher campo em falta.
+                      Fill in the missing field
                     </div>
                   )}
                   {showWarning && emailError && (
                     <div className="warning-msg">
-                      Email mal preenchido.
+                      Incorrect filled email
                     </div>
                   )}
                   <div className="warning-msg">
                     {showWarning && emailExistsError && (
-                      <div>Email já foi registrado. Utilize outro endereço.</div>
+                      <div>Email has already been registered</div>
                     )}
                   </div>
                 </div>
@@ -186,12 +186,12 @@ const Register = () => {
                   ></input>
                   {showWarning && !password && (
                     <div className="warning-msg">
-                      Preencher campo em falta.
+                        Fill in the missing field
                     </div>
                   )}
                   {showWarning && passwordError && (
                     <div className="warning-msg">
-                      Password mal preenchida.
+                       Incorrect filled password
                     </div>
                   )}
                 </div>
@@ -199,7 +199,7 @@ const Register = () => {
             </div>
           </div>
           {showSuccess && (
-            <div className="success-msg">Registro feito com sucesso!</div>
+            <div className="success-msg">Registration successfully completed!</div>
           )}
           <div className="card-footer">
             <button type="submit" className="btn btn-primary" disabled={isRegistered}>

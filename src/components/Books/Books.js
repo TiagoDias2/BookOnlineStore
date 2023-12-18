@@ -30,7 +30,7 @@ const [posts, setPosts] = useState([]);//O estado posts é inicializado como arr
       addToCart({ ...bookItem, quantity: 1 });// Adiciona o livro ao carrinho
       //Se o usuário não estiver logado, exibe um alerta
     } else {
-      alert('Por favor, faça login para adicionar ao carrinho.');
+      alert('Please Log In to add to cart.');
     }
   };
   

@@ -117,7 +117,7 @@ const Cart = () => {
  //A função handleCheckout é chamada quando o botão "Pay" é clicado.
   const handleCheckout = () => {
     // Exibir o alerta
-    window.alert("Vai-lhe ser enviado um email com os detalhes da sua encomenda bem como uma secção para efetuar o pagamento da respetiva encomenda");
+    window.alert("You will receive an email with the details of your order, as well as a section to make the payment for your order.");
 
     // Chamar a função para limpar o carrinho
     resetCart();
