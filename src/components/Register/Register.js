@@ -79,7 +79,7 @@ const Register = () => {
     
 
     // Fetch para verificar se o email já está registrado
-    fetch(`https://api.sheety.co/8643bdf53fe6b6541a9183d0e5c59a22/register/register`)
+    fetch(`https://api.sheety.co/70b5698a04c9427eaf582fc0a2e75a9b/register/register`)
       .then((response) => response.json())
       .then((data) => {
         // Armazena o array de emails registrados
@@ -99,7 +99,7 @@ const Register = () => {
 
         // Se o email não estiver registrado, prossegue com o registro
         else {
-          fetch("https://api.sheety.co/8643bdf53fe6b6541a9183d0e5c59a22/register/register", {
+          fetch("https://api.sheety.co/70b5698a04c9427eaf582fc0a2e75a9b/register/register", {
             method: "POST",
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify({

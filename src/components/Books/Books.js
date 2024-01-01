@@ -15,7 +15,7 @@ const [posts, setPosts] = useState([]);//O estado posts é inicializado como arr
   // O hook useEffect é executado sempre que o componente Books é renderizado
   // Busca os livros na API
   useEffect(() => {
-    fetch("https://api.sheety.co/8643bdf53fe6b6541a9183d0e5c59a22/frontPage/productItems")
+    fetch("https://api.sheety.co/70b5698a04c9427eaf582fc0a2e75a9b/frontPage/productItems")
       .then(response => response.json())
       .then(result => setPosts(result.productItems))// Atualiza o estado posts com os livros retornados pela API
       .catch(error => console.error('Erro ao carregar os livros:', error));

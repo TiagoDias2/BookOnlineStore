@@ -10,13 +10,15 @@ const Profile = () => {
   
   // Estado para armazenar o email do user
   const [userEmail, setUserEmail] = useState('');
+  const [isLoading, setIsLoading] = useState(true); // Estado de carregamento
+
   
   // Hook useEffect para realizar a requisição
   // para o endpoint de login e armazenar o email do user
   useEffect(() => {
     const fetchUserEmail = async () => {
       try {
-        const response = await fetch('https://api.sheety.co/8643bdf53fe6b6541a9183d0e5c59a22/login/login');
+        const response = await fetch('https://api.sheety.co/70b5698a04c9427eaf582fc0a2e75a9b/login/login');
         if (!response.ok) {
           throw new Error('Failed to fetch user data');
         }
